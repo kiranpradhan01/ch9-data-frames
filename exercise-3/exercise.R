@@ -39,7 +39,7 @@ us_p_e$category[us_p_e$X1960 == max(us_p_e$X1960)]
 # Define a function `lowest_category` that takes in a year as a parameter, and
 # returns the lowest spending category of that year
 lowest_category <- function(year) {
-  col_name <- paste("X",year)
+  col_name <- paste0("X",year)
   us_p_e$category[us_p_e[,col_name] == min(us_p_e[,col_name])]
 }
 
